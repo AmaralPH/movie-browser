@@ -15,3 +15,10 @@ export const seenedAction = (payload) => ({ type: SEENED_INPUT, payload });
 export const FETCH_DATA = 'FETCH_DATA';
 
 export const fetchData = (payload) => ({ type: FETCH_DATA, payload });
+
+// actions pagina inicial
+
+export const CHANGE_PAGE = 'CHANGE_PAGE';
+
+export const changePage = (payload) => ({ type: CHANGE_PAGE, payload });
+

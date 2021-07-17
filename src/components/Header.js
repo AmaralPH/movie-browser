@@ -3,14 +3,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 import logo from '../imgs/logo.png';
 import bookmark from '../imgs/bookmark-icon.png';
 import login from '../imgs/login-icon.png';
+import busca from '../imgs/busca-icon.png';
 import '../styles/Header.css'
 
 function Header() {
@@ -31,16 +32,26 @@ function Header() {
             </section>
           </Navbar.Brand>
           <InputGroup className="mb-1" size="sm">
+            aaa
             <FormControl
               type="search"
-              className="mr-5"
-              placeholder="Search movie by tittle"
-              aria-label="Search movie by tittle"
+              // className="mr-5"
+              placeholder="Buscar por filme"
+              aria-label="Buscar por filme"
             />
+            <Button variant="secondary">
+              <img
+                alt="icone de busca"
+                className="busca-icon"
+                height="30"
+                src={ busca }
+                width="30"
+              />
+            </Button>
           </InputGroup>
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
           <ButtonGroup >
-            <Button variant="danger" className="btn">
+            <Button variant="danger" className="butn-header">
               <img
                 alt="icone de bookmark"
                 className="bookmark-icon"
@@ -52,7 +63,7 @@ function Header() {
             </Button>
           </ButtonGroup>
           aaaa
-          <Button variant="primary" className="btn">
+          <Button variant="primary" className="butn-header">
             <img
               alt="icone de login"
               className="login-icon"
@@ -62,7 +73,6 @@ function Header() {
             />
             Login
           </Button>
-
         </Container>
       </Navbar>
     </>

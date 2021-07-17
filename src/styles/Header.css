@@ -3,7 +3,7 @@
   filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
 }
 
-.btn {
+.butn-header {
   display: flex;
 }
 
@@ -13,4 +13,9 @@
 
 .login-icon {
   margin-right: 10px;
+}
+
+.busca-icon {
+  color: white;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
 }

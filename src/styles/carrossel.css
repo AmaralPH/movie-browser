@@ -1,0 +1,17 @@
+.carrossel {
+  font-style: white;
+  display: flex;
+  height: 400px;
+  margin: 1% 0px 3% 0px;
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.carrossel-caption {
+  background-color: rgba(0, 0, 0, 0.541);
+  bottom: 40%;
+}
+
+.img-carrossel {
+  bottom: 50%;
+}

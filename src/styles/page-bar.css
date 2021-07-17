@@ -1,0 +1,27 @@
+.page-bar {
+  background-color: rgba(71, 135, 255, 0.432);
+  display: flex;
+  justify-content: center;
+  margin: 3% 0% 0% 0%;
+}
+
+.page-btn {
+  background-color: rgba(112, 128, 144, 0);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #212529;
+  height: 40px;
+  width: 40px
+}
+
+.page-btn:hover {
+  background-color: rgba(165, 182, 199, 0.39);
+  border: 1px outset black;
+}
+
+.checked {
+  background-color: rgba(230, 229, 235, 0.986);
+  border: 1px outset black;
+  box-shadow: 1px 1px 1px 1px rgb(85, 83, 83);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -15,19 +16,17 @@ function Header() {
   return (
     <>
       <Navbar bg="dark">
-        <Row>
-          <Col>
+        <Row className="header-row">
+          <Col sm="2">
             <LogoBrand />
           </Col>
-          <Col>
+          <Col sm="4">
             <SearchBar />
           </Col>
-          aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          <Col>
+          <Col sm="4" className="bookmark-btn">
             <BookmarkBtn />
           </Col>
-          aaaa
-          <Col>
+          <Col sm="1">
             <LoginBtn />
           </Col>
         </Row>

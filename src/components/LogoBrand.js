@@ -6,15 +6,15 @@ import logo from '../imgs/netflix.png';
 function LogoBrand() {
   return (
     <Navbar.Brand href="/">
-      <section className="logo">
+      {/* <section className="logo"> */}
         <img 
           alt="claquete de cinema"
           src={ logo }
-          width="100"
-          heigth="100"
+          width="150"
+          heigth="150"
           className="d-inline-block align-top logo-img"
         />{' '}
-      </section>
+      {/* </section> */}
     </Navbar.Brand>
   );
 }

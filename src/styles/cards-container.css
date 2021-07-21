@@ -5,6 +5,7 @@ a {
 
 .header-bar {
   background-color: rgba(71, 135, 255, 0.973);
+  /* background-color: rgb(247, 42, 6); */
   display: inline-block;
   height: 6px;
   margin-left: 3%;

@@ -6,23 +6,20 @@ import busca from '../imgs/busca-icon.png';
 
 function SearchBar() {
   return (
-    <InputGroup className="mb-1" size="sm">
-      aaa
+    <InputGroup className="mb-1 search-bar-container" size="sm">
       <FormControl
         type="search"
-        // className="mr-5"
         placeholder="Buscar por filme"
         aria-label="Buscar por filme"
+        className="search-bar"
       />
-      <Button variant="secondary">
-        <img
-          alt="icone de busca"
-          className="busca-icon"
-          height="30"
-          src={ busca }
-          width="30"
-        />
-      </Button>
+      <img
+        alt="icone de busca"
+        className="busca-icon"
+        height="20"
+        src={ busca }
+        width="20"
+      />
     </InputGroup>
   );
 }

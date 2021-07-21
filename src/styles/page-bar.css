@@ -1,5 +1,6 @@
 .page-bar {
   background-color: rgba(17, 95, 240, 0.753);
+  /* background-color:rgb(247, 38, 1); */
   display: flex;
   justify-content: center;
   margin: 3% 0% 0% 0%;

@@ -7,11 +7,11 @@ import MoviePagesBar from './MoviePagesBar.js';
 function MoviesDisplay() {
   return (
     <>
+    <Carrossel />
     <Container>
-      <Carrossel />
       <MovieCardsContainer />
-      <MoviePagesBar />
     </Container>
+    <MoviePagesBar />
     </>
   )
 }

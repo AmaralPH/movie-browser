@@ -1,79 +1,36 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
-import logo from '../imgs/logo.png';
-import bookmark from '../imgs/bookmark-icon.png';
-import login from '../imgs/login-icon.png';
-import busca from '../imgs/busca-icon.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import SearchBar from './SearchBar';
+import LogoBrand from './LogoBrand';
+import BookmarkBtn from './BookmarkBtn';
+import LoginBtn from './LoginBtn';
+
 import '../styles/Header.css'
 
 function Header() {
   return (
     <>
       <Navbar bg="dark">
-        <Container>
-          <Navbar.Brand href="/">
-            <section className="logo">
-              <img 
-                alt="claquete de cinema"
-                src={ logo }
-                width="30"
-                heigth="30"
-                className="d-inline-block align-top"
-              />{' '}
-              Movie Browser
-            </section>
-          </Navbar.Brand>
-          <InputGroup className="mb-1" size="sm">
-            aaa
-            <FormControl
-              type="search"
-              // className="mr-5"
-              placeholder="Buscar por filme"
-              aria-label="Buscar por filme"
-            />
-            <Button variant="secondary">
-              <img
-                alt="icone de busca"
-                className="busca-icon"
-                height="30"
-                src={ busca }
-                width="30"
-              />
-            </Button>
-          </InputGroup>
+        <Row>
+          <Col>
+            <LogoBrand />
+          </Col>
+          <Col>
+            <SearchBar />
+          </Col>
           aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          <ButtonGroup >
-            <Button variant="danger" className="butn-header">
-              <img
-                alt="icone de bookmark"
-                className="bookmark-icon"
-                height="30"
-                src={ bookmark }
-                width="30"
-              />
-              Watchlist
-            </Button>
-          </ButtonGroup>
+          <Col>
+            <BookmarkBtn />
+          </Col>
           aaaa
-          <Button variant="primary" className="butn-header">
-            <img
-              alt="icone de login"
-              className="login-icon"
-              height="30"
-              src={ login }
-              width="30"
-            />
-            Login
-          </Button>
-        </Container>
+          <Col>
+            <LoginBtn />
+          </Col>
+        </Row>
       </Navbar>
     </>
   )

@@ -17,7 +17,7 @@ function Header() {
     <>
       <Navbar bg="dark">
         <Row className="header-row">
-          <Col sm="2">
+          <Col sm="2" className="logo-brand">
             <LogoBrand />
           </Col>
           <Col sm="4">

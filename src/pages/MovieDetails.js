@@ -22,12 +22,26 @@ function MovieDetails() {
 
   return (
     <div className="movie-details-bg">
+      <div
+        className="back-img"
+        style={ {
+          backgroundImage: 
+            `linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), 
+            url('https://image.tmdb.org/t/p/w1280/${data.backdrop_path}')` 
+        } }
+      >
       <Header />
       <Container className="movie-details">
-        <div>
+        <section className="first-details">
+          {console.log(data)}
           <img alt="Poster" src={`https://image.tmdb.org/t/p/w300${data.poster_path}`} />
-        </div>
+          <Container>
+            <h2 className="movie-title">{ data.title }</h2>
+          </Container>
+        </section>
       </Container>
+      </div>
     </div>
   );
 }

@@ -3,3 +3,20 @@
   margin-top: 3%;
   padding: 0;
 }
+
+.first-details {
+  display: flex;
+}
+
+.movie-title {
+  color: rgb(255, 102, 0);
+  font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.back-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}

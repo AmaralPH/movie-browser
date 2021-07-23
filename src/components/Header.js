@@ -15,7 +15,7 @@ import '../styles/Header.css'
 function Header() {
   return (
     <>
-      <Navbar bg="dark">
+      <Navbar bg="dark" className="navbar">
         <Row className="header-row">
           <Col sm="2" className="logo-brand">
             <LogoBrand />

@@ -9,10 +9,10 @@
   background-color: rgba(16, 18, 20, 0.979);
 } */
 
-.butn-header {
+/* .butn-header {
   display: flex;
   height: 40px;
-}
+} */
 
 .bookmark-btn {
   display: flex;
@@ -27,10 +27,6 @@
 
 .bookmark-icon {
   margin-right: 5px;
-}
-
-.login-icon {
-  margin-right: 10px;
 }
 
 .busca-icon {
@@ -57,4 +53,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.navbar {
+  height: 70px;
 }

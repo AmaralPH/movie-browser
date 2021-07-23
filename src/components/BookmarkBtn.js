@@ -5,13 +5,13 @@ import bookmark from '../imgs/bookmark-icon.png';
 
 function BookmarkBtn() {
   return (
-    <Button variant="danger" className="butn-header">
+    <Button variant="danger" size="sm" className="butn-header">
       <img
         alt="icone de bookmark"
         className="bookmark-icon"
-        height="30"
+        height="20"
         src={ bookmark }
-        width="30"
+        width="20"
       />
       Watchlist
     </Button>

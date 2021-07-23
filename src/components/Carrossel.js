@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { getTrendingData } from '../services/TrendingMoviesAPI';
+import { genericMovieAPI } from '../services/GenericMovieAPI';
 
 import '../styles/carrossel.css'
 
@@ -14,7 +14,7 @@ function Carrossel() {
 
   useEffect(() => {
     const getData = () => {
-      getTrendingData(1).then((response) => setData(response));
+      genericMovieAPI('/movie/popular', '', '', 1).then((response) => setData(response.results));
     }
     getData();
   }, [setData])

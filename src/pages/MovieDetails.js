@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
 import Header from '../components/Header';
+import MovieGalery from '../components/MovieGalery';
 
 import { genericMovieAPI } from '../services/GenericMovieAPI';
 
@@ -56,12 +57,15 @@ function MovieDetails() {
         <Container className="movie">
           <section className="movie__img">
             <img alt="Poster" src={`https://image.tmdb.org/t/p/w300${data.poster_path}`} />
-            <Container>
+          </section>
+          <Container className="movie__container">
+
+            <section className="movie__info">
               <h1 className="movie__title"><b>{ data.title }</b></h1>
               <h5><b>PLOT</b></h5>
-              <h6>{ data.overview }</h6>
+              <h6 className="movie__detail">{ data.overview }</h6>
               <h5><b>GENRES</b></h5>
-              <h6 className="movie__genres">
+              <h6 className="movie__genres movie__detail">
                 {data.genres !== undefined ? data.genres.map((genre) => (
                   <Button size="sm" variant="warning" className="movie__genre">
                     <span>{genre.name}</span>
@@ -69,16 +73,23 @@ function MovieDetails() {
                 )) : null }
               </h6>
               <h5><b>DIRECTED BY</b></h5>
-              <h6>{credits.crew.find((person) => person.job === 'Director').name}</h6>
+              <h6 className="movie__detail">{credits.crew.find((person) => person.job === 'Director').name}</h6>
               <h5><b>WATCH ON</b></h5>
-              {console.log(stream)}
-              <h6>{stream !== undefined ? stream.flatrate.map((info) => (
+              <h6 className="movie__detail">{stream === undefined ? 'Apenas nos cinemas' 
+                : stream.flatrate_and_buy !== undefined ? stream.flatrate_and_buy.map((info) => (
                 <a href={stream.link} target="_blank">
                   <img src={`https://image.tmdb.org/t/p/original${info.logo_path}`} width="50" />
                 </a>
-              )) : 'Apenas nos cinemas'}</h6>
-            </Container>
-          </section>
+              )) : stream.flatrate.map((info) => (
+                <a href={stream.link} target="_blank">
+                  <img src={`https://image.tmdb.org/t/p/original${info.logo_path}`} width="50" />
+                </a>
+              ))}</h6>
+            </section>
+          </Container>
+        </Container>
+        <Container>
+          <MovieGalery />
         </Container>
         </div>
       </div>

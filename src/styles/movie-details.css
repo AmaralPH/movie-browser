@@ -3,13 +3,14 @@
 .movie {
   background-color: rgba(0, 0, 0, 0.342);
   color: white;
+  display: flex;
   font-family: 'Abel', sans-serif;
   margin-top: 3%;
   padding: 0;
 }
 
 .movie__img {
-  display: flex;
+  display: inline-block;
 }
 
 .movie__title {
@@ -25,4 +26,19 @@
 
 .movie__genre {
   margin-right: 5px;
+}
+
+.movie__container {
+  display: flex;
+}
+
+.movie__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3%;
+}
+
+.movie__detail {
+  padding-left: 2%;
 }

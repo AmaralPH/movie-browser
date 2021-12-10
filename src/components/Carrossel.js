@@ -27,7 +27,7 @@ function Carrossel() {
     >
       {data.slice(0, 3).map((movie, i) => (
         <Carousel.Item key={ i }>
-          {console.log(movie)}
+          {/* {console.log(movie)} */}
           <img
             className="d-block w-100 img-carrossel"
             src={ `http://image.tmdb.org/t/p/w1280${movie.backdrop_path}` }
